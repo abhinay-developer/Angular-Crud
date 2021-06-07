@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "CrudApp"
+    }
+  },
+  "defaultProject": "CrudApp",
+  "cli": {
+    "analytics": "3b33a328-7bfd-4259-b6aa-715ecaf232bb"
+  }
 }
