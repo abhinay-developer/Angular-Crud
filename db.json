@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "firstName": "Raj",
+      "lastName": "Kumar",
+      "email": "rajkumar@gmail.com",
+      "password": "Raj@12345",
+      "profession": "JavaDeveloper",
+      "country": "India",
+      "city": "Sircilla",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "firstName": "Jhon",
+      "lastName": "Deo",
+      "email": "Jhondeo@gmail.com",
+      "password": "JhonDeo@12345",
+      "profession": "Java Developer",
+      "country": "US",
+      "city": "California"
+    },
+    {
+      "id": 3,
+      "firstName": "sai",
+      "lastName": "kumar",
+      "email": "saikumar@gmail.com",
+      "password": "Saikumar@12345",
+      "profession": "Java Developer",
+      "country": "India",
+      "city": "Hyderbad"
+    },
+    {
+      "id": 4,
+      "firstName": "shiva",
+      "lastName": "kumar",
+      "email": "shivakumar@gmail.com",
+      "password": "Shivakumar@12345",
+      "profession": "Angular Developer",
+      "country": "India",
+      "city": "Hyderbad"
+    },
+    {
+      "firstName": "harsha",
+      "lastName": "kumar",
+      "email": "harshakumar@gmail.com",
+      "password": "Harshs@123",
+      "profession": "JSDeveloper",
+      "country": "UK",
+      "city": "Sircilla",
+      "id": 5
+    },
+    {
+      "firstName": "sai",
+      "lastName": "kiran",
+      "email": "saikiran@gmail.com",
+      "password": "Sai@12345",
+      "profession": "JavaDeveloer",
+      "country": "India",
+      "city": "Hyderbad",
+      "id": 6
+    }
+  ]
+}

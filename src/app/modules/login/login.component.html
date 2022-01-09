@@ -1,1 +1,56 @@
-<p>login works!</p>
+<div class="container">
+    <h3 class="text-primary">LOGIN</h3>
+    <div *ngIf="failureMsg">
+       <p class="alert alert-danger">{{failureMsg}}</p>
+    </div>
+    <form [formGroup]="signIn"  (ngSubmit)="loginUser()">
+        <div class="form-group">
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" class="form-control"
+            formControlName="email">
+            <div *ngIf="getEmail().touched && getEmail().invalid ">
+                <div *ngIf="getEmail().errors.required">
+                    <small class="text-danger">
+                     Email is Required
+                    </small>
+                </div>
+        
+                <div *ngIf="getEmail().errors.email">
+                    <small class="text-danger">
+                   Invalid Email
+                    </small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="form-control"
+            formControlName="password" >
+            <div *ngIf="getPassword().touched && getPassword().invalid ">
+                <div *ngIf="getPassword().errors.required">
+                    <small class="text-danger">
+                     Password is Required
+                    </small>
+                </div>
+            </div>
+        </div>
+     
+              
+        <div class="form-group mt-2">
+
+            <button type="submit"  class="btn btn-success "
+            [disabled]="signIn.invalid"
+            >SIGN IN</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+           
+
+
+            <button type="reset"  class="btn btn-warning ">RESET </button>
+          </div>
+            
+        
+    </form>
+
+
+</div>

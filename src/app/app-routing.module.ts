@@ -15,6 +15,8 @@ const routes: Routes = [
 { path:'sign-in',loadChildren:()=>import('./modules/login/login.module').then(
   m=>m.LoginModule)},
 { path:'sign-up',loadChildren:()=>import('./modules/sign-up/sign-up.module').then(m=>m.SignUpModule)},
+{ path:'user-home',loadChildren:()=>import('./modules/user-home/user-home.module').then(m=>m.UserHomeModule)},
+{ path:'user-update/:id',loadChildren:()=>import('./modules/user-update/user-update.module').then(m=>m.UserUpdateModule)}
 
 
 ];

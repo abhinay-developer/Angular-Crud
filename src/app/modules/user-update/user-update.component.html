@@ -1,15 +1,16 @@
 <div class="container">
 
 
-    <div class="registartion-form">
+    <div class="update-form" >
         <!-- {{signUpForm.value | json}} -->
-        <h2 class="text-success">Sign Up</h2>
+        <h2 class="text-success">Update User</h2>
         <marquee behavior="" direction="">
 
             <!-- <img src="./../../../assets/images/sign-up.jpg" width="5%" height="5%"> -->
-            <span style="color: orangered;">Sign Up Here</span>
+            <span style="color: orangered;">update</span>
         </marquee>
-        <form [formGroup]="signUpForm" (ngSubmit)="createAUser()">
+      
+        <form [formGroup]="updateForm" (ngSubmit)="updateAUser()">
          
             <div class="form-group">
 
@@ -64,7 +65,7 @@
 
                 <label for="email">Email </label>
                 <input type="email" name="email" id="email" class="form-control" 
-                formControlName="email">
+                formControlName="email" readonly>
                 <div *ngIf="getEmail().touched && getEmail().invalid ">
 
                     <div *ngIf="getEmail().errors.required">
@@ -175,8 +176,8 @@
           <div class="form-group mt-2">
 
             <button type="submit"  class="btn btn-success "
-            [disabled]="signUpForm.invalid"
-            >SIGN UP</button>
+            [disabled]="updateForm.invalid"
+            >UPDATE</button>
             &nbsp;&nbsp;&nbsp;&nbsp;
 
 
